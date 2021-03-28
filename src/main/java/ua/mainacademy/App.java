@@ -21,9 +21,7 @@ public class App
 
         goroda.sort(Comparator.comparing(Goroda::getName).thenComparing(Goroda::getCode));
 
-        for (Goroda gorod : goroda) {
-            System.out.println(gorod.toString());
-        }
+        System.out.println(goroda);
 
     }
 
@@ -51,7 +49,7 @@ class Goroda {
 
     @Override
     public String toString() {
-        return "Goroda{" +
+        return "\nGoroda{" +
                 "name='" + name + '\'' +
                 ", code=" + code +
                 '}';
